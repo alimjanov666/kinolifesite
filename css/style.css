@@ -1,0 +1,183 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Righteous', 'cursive';
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+html {
+    height: 100%;
+
+}
+
+/* site hero secdtion */
+
+.site-hero:not(last-child) {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/yaponiyas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left;
+    color:antiquewhite;
+    text-shadow: 0 0 9px #222;
+
+}
+.site-hero-title {
+    font-family: 'Kanit', sans-serif;
+    padding-top: 32px;
+}
+.site-hero-text {
+    margin-bottom: 22px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+}
+
+nav ul li {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+/* end */
+
+
+.site-application {
+    background-color:#fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+.site-application__title {
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 30px;
+}
+.site-application__content {
+    width: 100%;
+    max-width: 1000px; 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.site-application__text {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+
+}
+
+/* card section */
+
+.cards-section { 
+    background-color:rgba(35, 5, 65, 0.659)
+}
+.cards-section__list {
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    list-style-type: none;
+    text-align: center;
+
+}
+.cards-section__list-item {
+    width: 300px ;
+    background-color:#fff;
+    margin-bottom: 42px;
+}
+.cards-section__list-item:not(:last-child) {
+    margin-right: 32px
+
+}
+
+
+.cards-section__item-img {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+.cards-section__item-title {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 80%; */
+    font-family: 'Kanit', sans-serif;
+}
+.cards-section__item-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 32px;
+
+}

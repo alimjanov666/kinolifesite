@@ -5,6 +5,8 @@
 }
 
 body {
+    width: 100%;
+    max-width: 1100;
     font-family: 'Righteous', 'cursive';
     height: 100%;
     font-size: 16px;
@@ -32,6 +34,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position:left;
+    background-attachment: fixed    ;
     color:antiquewhite;
     text-shadow: 0 0 9px #222;
 
